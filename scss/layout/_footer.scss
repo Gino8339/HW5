@@ -1,0 +1,126 @@
+.footer-form {
+    background-color:$dark-green;
+    padding: 30px;
+}
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include pad{
+        flex-direction: column;
+    }
+}
+.label-form {
+    display: flex;
+    align-items: center;
+    img {
+        height: 40px;
+        margin-right: 20px;
+    }
+    span {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        color: $light-green;
+    }
+    @include pad{
+        margin-bottom: 30px;
+    }
+}
+
+.form-input {
+    display: flex;
+    position: relative;
+    .mailIcon {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        bottom: 16px;
+    }
+    input {
+        display: block;
+        padding-left: 65px;
+        font-weight: bold;
+        color: $dark-green;
+        outline: none;
+        border: none;
+    }
+    button {
+        cursor: pointer;
+        background-color: #FFE180;
+        padding: 16px;
+        outline: none;
+        border: none;
+    }
+}
+
+
+.footer {
+    background-color: $light-green;
+    padding: 30px 0px;
+}
+.footer-inner{
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+.footer-inner-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-info {
+            font-size: 16px;
+            line-height: 24px;
+            color: $dark-green;
+        }
+        img{
+            margin-bottom: 40px;
+        }
+    }
+    .slogan {
+        writing-mode: vertical-rl;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 5px;
+        font-weight: bold;
+        color: $dark-green;
+        @include mobile{
+            display: none;
+        }
+    }
+}
+
+
+
+.footer-inner-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .link {
+        display: flex;
+        a {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        @include mobile{
+            margin-bottom: 23px;
+        }
+    }
+    .rights {
+        font-size: 12px;
+        color: #3F5D45;
+    }
+    @include mobile{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+

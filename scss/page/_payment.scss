@@ -1,0 +1,42 @@
+@import '../customization/grid';
+.payment{
+    background-image: url(../../image/banner2.jpg);
+    display: flex;
+    justify-content: center;
+    height: 460px;
+    margin-bottom: 60px;
+    position: relative;
+    .icons{
+        color:$dark-green;
+        position: absolute;
+        top:30%;
+    }
+    h3{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top:40%;
+        font-size: 48px;
+        color:$dark-green;
+        font-weight:bolder;
+    }
+    a{
+        width: 300px;
+        height: 65px;
+        background-color: #FFE180;
+        font-size: 24px;
+        font-weight: bolder;
+        text-align: center;
+        line-height: 65px;
+        color:$dark-green;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top:60%;
+        @include iphone6plus{
+            width: 100%;
+            top:100%;
+        }
+    }
+    
+}

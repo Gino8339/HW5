@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 0px;
+    .navbar{
+        display: none;
+        @include mobile{
+          display: block;
+        }
+      }
+    h1{
+        width: 25%;
+      }
+    .logo{
+        display: block;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+        text-indent: 101%;
+        white-space: nowrap;
+        background-size: contain;
+        height: 40px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include mobile{
+          background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg);
+        }
+     }
+     @include mobile{
+      display: flex;
+      justify-content: space-around;
+     }
+    }
+.menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            display: flex;
+           
+          }
+        li{
+             padding: 0 30px;
+            text-align: center;
+            a{
+                color:$dark-green;
+             }
+             @include mobile{
+              padding: 10px 0px;
+             }
+          }
+        li:hover{
+          background-color:$light-green;
+        }  
+        &_list{
+            .active{
+              max-height: 200px;
+            }
+            @include mobile{
+              ul{
+                position: absolute;
+                left: 0;
+                top: 100%;
+                width: 100%;
+                transition: all 0.8s;
+                max-height:0;
+                overflow: hidden;
+                background: white;
+                flex-direction: column;
+                background: white;
+                flex-direction: column;
+              }
+  
+            }
+           
+        
+        }
+}
+
+
+
+  
+  
+
+  
+  
+      

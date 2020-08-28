@@ -1,0 +1,153 @@
+@import '../customization/grid';
+.banner{
+    margin-bottom: 60px;
+    @include pad{
+      margin-bottom: 0;
+    }
+  }
+  
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+  }
+.sidebar{
+    width: 33%;
+    font-size: 24px;
+    h3, li{
+        height: 65px;
+        text-align: center;
+        line-height: 65px;
+        border:1px solid $light-green;
+    }
+    h3{
+        background-color: $dark-green;
+        color:$light-green;
+        font-weight: bolder;
+      }
+    a{
+        color:$dark-green;
+        font-weight: bolder;
+      }  
+    li:hover{
+        background-color: $light-green;
+      }
+    @include pad {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+      
+  }
+
+.product{
+    width: 66%;
+    &_list{
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        @include pad{
+          justify-content: space-around;
+        }
+      }
+    @include pad{
+      width: 100%;
+    }
+  }
+
+.items{
+    margin-bottom: 20px;
+    &_top{
+        position:relative;
+        .tags{
+            position: absolute;
+            left:20px;
+            top:0;
+            left:20px;
+            color:$light-green;
+            background-color: $dark-green;
+            font-weight: bolder;
+            font-size:16px;
+            writing-mode: vertical-lr;
+            padding: 10px;
+            letter-spacing: 4px;
+          }
+        .like{
+            position: absolute;
+            top:20px;
+            right:20px;
+          }
+        
+      }
+    &_info{
+        display: flex;
+        height: 56px;
+        .name{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:$dark-green;
+            font-size: 20px;
+            border-left: 1px solid $light-green;
+            border-right: 1px solid $light-green;
+          }
+        .price{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:$dark-green;
+            font-weight: bolder;
+            font-size: 20px;
+            border-right: 1px solid $light-green;
+          }  
+      }
+      .add_cart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        background-color: $light-green;
+        color:$dark-green;
+        font-weight: bolder;
+        font-size:24px;
+      }
+      .add_cart:hover{
+        background-color: $dark-green;
+        color:$light-green;
+      }  
+  }
+  
+  
+.page{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    ul{
+        display: flex;
+        .arrow:hover{
+            background-color: $light-green;
+          }
+        .number:hover{
+            background-color: $dark-green;
+            color:$light-green;
+          }
+      }
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border:1px solid $light-green;
+        color:$dark-green;
+      }  
+      @include pad{
+        justify-content: center;
+      }
+  }
+
+  
+ 
+  

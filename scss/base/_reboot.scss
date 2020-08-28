@@ -1,0 +1,27 @@
+@import'../customization/grid';
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: "PingFang TC", "Microsoft JhengHei", Times, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.container{
+ max-width: 940px;
+ margin: 0 auto;
+ @include pad{
+     max-width: 767px;
+ }
+}
