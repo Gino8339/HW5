@@ -645,6 +645,7 @@ a {
   height: 460px;
   margin-bottom: 60px;
   position: relative;
+  z-index: -1;
 }
 
 .payment .icons {
